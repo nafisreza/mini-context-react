@@ -1,12 +1,16 @@
 import UserContextProvider from "./context/UserContextProvider"
+import './App.css'
+import Login from './components/Login'
+import Profile from './components/Profile'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <UserContextProvider>
-        
+        <h1>I am learning useContext API</h1>
+        <Login/>
+        <Profile/> 
       </UserContextProvider>
     </>
   )
